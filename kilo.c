@@ -261,9 +261,9 @@ void editorSelectSyntaxHighlight() {
 
                 int filerow;
                 for (filerow = 0; filerow < E.numrows; filerow++) {
-                    editorUpdateRow(&E.row[filerow]);
+                    editorUpdateSyntax(&E.row[filerow]);
                 }
-                
+
                 return;
             }
             i++;
